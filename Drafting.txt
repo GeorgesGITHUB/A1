@@ -1,0 +1,17 @@
+Landing Page
+    - Title
+    - Input for Event ID
+    - Submit button (launches to another page)
+
+Event Page
+    - Title
+    - Date
+    - Time
+    - Location
+    - General Description
+    - Image Preview
+        - Carrousel
+    - Speaker List Section
+
+Creation Page
+    - Form of inputs for all Event Page Element
