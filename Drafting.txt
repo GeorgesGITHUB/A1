@@ -12,6 +12,8 @@ Event Page
     - Image Preview
         - Carrousel
     - Speaker List Section
+    - Single Backwards Navigation
 
 Creation Page
     - Form of inputs for all Event Page Element
+    - Single Backwards Navigation
