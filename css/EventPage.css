@@ -1,1 +1,39 @@
-/*# sourceMappingURL=EventPage.css.map */
+body {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 100px;
+  padding-right: 100px;
+  font-size: larger;
+  color: white;
+  background-color: rgba(47, 79, 79, 0.856);
+}
+
+h1 {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 45px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.flex-container hr {
+  margin: 0px;
+  border: 2px dashed;
+}
+
+.flex-meta-info {
+  display: flex;
+  justify-content: space-evenly;
+  border-bottom-style: solid;
+  padding-bottom: 10px;
+}/*# sourceMappingURL=EventPage.css.map */
