@@ -28,7 +28,27 @@ body{
     margin-top: auto;
     margin-top: 2%;
 
-    zoom: 2;
+    zoom: 1.5;
+}
+
+.flex-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-between;
+
+    .flex-input{
+        display: flex;
+        gap: 4px;
+        
+        input{ flex: 8;}
+        button{ flex: 1;}
+    }
+    
+    p{
+        color: rgba(255, 255, 255, 0.541);
+        font-family: 'Courier New', Courier, monospace;
+    }
 }
 
 /* Cool button pressing

@@ -11,10 +11,15 @@
       <div class="center">
             <h1>Event Visualizer</h1>
             <p>Enter your Event ID below</p>
-            <!-- Fix The Form Element -->
-            <form action="">
-                  <input type="text" autofocus>
-                  <input type="submit" value="Go">
+            <form>
+                  <div class="flex-form">
+                        <div class="flex-input">
+                              <input type="text" autofocus>
+                              <button type="submit" formaction="EventPage.html">Go</button>
+                        </div>
+                        <p>- or -</p>
+                        <button formaction="EventMaker.html">Create Event</button>
+                  </div>
             </form>
       </div>
 </body>
