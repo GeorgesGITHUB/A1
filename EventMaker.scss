@@ -1,0 +1,57 @@
+//Variables
+$padding: 20px;
+
+body{
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: larger;
+    color: white;
+    background-color: rgba(79, 47, 47, 0.856);
+}
+
+h1{
+    margin-bottom: 45px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.flex-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px; //margin between col elements
+
+    .flex-input{
+        display: flex;
+        gap: 20px;
+        input{ flex: 1;}
+        padding: $padding $padding $padding $padding;
+    }
+
+    #flex-textarea{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        padding: $padding $padding $padding $padding;
+    }
+
+    .flex-input:hover  {
+        background-color: rgba(79, 47, 47, 0.637);
+    }
+
+    #flex-textarea:hover{
+        background-color: rgba(79, 47, 47, 0.637);
+    }
+
+    #flex-buttons{
+        margin-top: 10px;
+        display: flex;
+        flex-direction: row;
+        
+        button{
+            flex: 1;
+        }
+    }
+
+
+}

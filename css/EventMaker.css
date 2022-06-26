@@ -1,0 +1,50 @@
+body {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: larger;
+  color: white;
+  background-color: rgba(79, 47, 47, 0.856);
+}
+
+h1 {
+  margin-bottom: 45px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.flex-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+.flex-form .flex-input {
+  display: flex;
+  gap: 20px;
+  padding: 20px 20px 20px 20px;
+}
+.flex-form .flex-input input {
+  flex: 1;
+}
+.flex-form #flex-textarea {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 20px 20px 20px 20px;
+}
+.flex-form .flex-input:hover {
+  background-color: rgba(79, 47, 47, 0.637);
+}
+.flex-form #flex-textarea:hover {
+  background-color: rgba(79, 47, 47, 0.637);
+}
+.flex-form #flex-buttons {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+}
+.flex-form #flex-buttons button {
+  flex: 1;
+}/*# sourceMappingURL=EventMaker.css.map */
