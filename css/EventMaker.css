@@ -41,9 +41,10 @@ h1 {
   background-color: rgba(79, 47, 47, 0.637);
 }
 .flex-form #flex-buttons {
-  margin-top: 10px;
   display: flex;
   flex-direction: row;
+  gap: 10px;
+  padding: 20px 20px 20px 20px;
 }
 .flex-form #flex-buttons button {
   flex: 1;
