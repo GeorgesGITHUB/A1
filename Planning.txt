@@ -17,3 +17,13 @@ Event Page
 Creation Page
     - Form of inputs for all Event Page Element
     - Single Backwards Navigation
+
+
+JavaScript Functional Requirements
+- save event of the page
+- validates input info of Event Maker
+- sends all inputs of EventPage.html to database (using the object)
+- load event on EventPage using the ID
+- create ID
+- object to interface with database
+- class that implements database
