@@ -43,18 +43,4 @@ body {
 .flex-form p {
   color: rgba(255, 255, 255, 0.541);
   font-family: "Courier New", Courier, monospace;
-}
-
-/* Cool button pressing
-.button{
-    border: none;
-    background-color: white;
-    transition: transform 0.1s ease-out;
-    box-shadow: 0 5px 0 rgb(141, 137, 137);
-}
-
-.button:active{
-    box-shadow: none;
-    transform: translateY(5px);
-} 
-*//*# sourceMappingURL=LandingPage.css.map */
+}/*# sourceMappingURL=LandingPage.css.map */
