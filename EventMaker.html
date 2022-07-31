@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Event Maker</title>
     <link rel="stylesheet" href="./css/EventMaker.css">
+    <script defer src="EventMaker.js"></script>
 </head>
 <body>
     <h1>Event Creation Form</h1>
@@ -17,17 +18,12 @@
             </div>
 
             <div class="flex-input">    
-                <label for="date">Event Date</label>
-                <input type="date" id="date" required>
+                <label for="datetime">Date & Time</label>
+                <input type="datetime-local" id="datetime" required min="">
             </div>
 
             <div class="flex-input">    
-                <label for="time">Event Time</label>
-                <input type="time" id="time" required>
-            </div>
-
-            <div class="flex-input">    
-                <label for="location">Event Location</label>
+                <label for="location">Location</label>
                 <input type="text" id="location" required placeholder="123 Bart Street">
             </div>
 
@@ -42,7 +38,7 @@
             </div>
 
             <div id="flex-buttons">
-                <button type="submit" formaction="EventPage.html">Submit</button>
+                <button type="submit" onclick="saveEvent()">Submit</button>
                 <button type="reset">Clear</button>
             </div>
 
