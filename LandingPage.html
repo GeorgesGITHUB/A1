@@ -6,21 +6,22 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Landing Page</title>
       <link rel="stylesheet" href="./css/LandingPage.css">
+      <script src="LandingPage.js" defer></script>
 </head>
 <body>
       <div class="center">
             <h1>Event Visualizer</h1>
             <p>Enter your Event ID below</p>
-            <form>
+            
                   <div class="flex-form">
                         <div class="flex-input">
-                              <input type="text" autofocus placeholder="Please Enter Your Event ID">
-                              <button type="submit" formaction="EventPage.html">Go</button>
+                              <input type="text" id="eventID" placeholder="Please Enter Your Event ID" autofocus>
+                              <button onclick="go()">Go</button>
                         </div>
                         <p>- or -</p>
-                        <button formaction="EventMaker.html">Create Event</button>
+                        <button onclick="creationPage()">Create Event</button>
                   </div>
-            </form>
+            
       </div>
 </body>
 </html>
