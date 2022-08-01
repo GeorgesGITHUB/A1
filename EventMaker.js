@@ -2,12 +2,11 @@ function saveEvent(){
 
     if (validEventData()===false) { return false;} //can't continue further
 
-    console.log('generating id');
     var id = generateID();
     localStorage.setItem( id, getEventData() );
     localStorage.setItem('currentID',id);
 
-    window.alert(`Remember you Event ID : ${id}`);
+    window.alert(`Remember your Event ID : ${id}`);
     
     window.location.assign('EventPage.html');
 }
@@ -31,7 +30,6 @@ function validEventData(){
     if ( document.getElementById('color').value === (null || '') ) {
         alert('Please fill out the fields'); return false;}
 
-    console.log('is valid');
     return true; // is valid
 }
 

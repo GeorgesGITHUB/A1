@@ -3,6 +3,8 @@
 function go(){
     var id = document.getElementById('eventID').value;
 
+    if ( id === 'currentID' ) { alert('Please choose another ID'); return false; }
+
     if ( idExist(id) ){
           localStorage.setItem('currentID',id);
           window.location.assign('EventPage.html');
