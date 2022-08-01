@@ -1,9 +1,4 @@
 body {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  margin-left: auto;
-  margin-right: auto;
   padding-left: 100px;
   padding-right: 100px;
   font-size: larger;
@@ -23,12 +18,8 @@ h1 {
 
 .flex-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  gap: 20px;
-}
-.flex-container hr {
-  margin: 0px;
-  border: 2px dashed;
 }
 
 .flex-meta-info {
@@ -36,4 +27,9 @@ h1 {
   justify-content: space-evenly;
   border-bottom-style: solid;
   padding-bottom: 10px;
+}
+
+.flex-description {
+  display: flex;
+  justify-content: center;
 }/*# sourceMappingURL=EventPage.css.map */

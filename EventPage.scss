@@ -5,9 +5,6 @@ $horizontal-border-style: solid;
 $horizontal-border-width: 10px;
 
 body{
-    width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
     padding-left: $horizontal-padding;
     padding-right: $horizontal-padding;
     
@@ -25,16 +22,12 @@ h1{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.flex-container {
-    hr{
-        margin: 0px;
-        border: 2px dashed;
-    }
-    
+.flex-container {    
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    gap: 20px;
-
+    //gap: 20px;
+    //align-items: stretch
 }
 
 .flex-meta-info{
@@ -43,4 +36,9 @@ h1{
 
     border-bottom-style: solid;
     padding-bottom: 10px;
+}
+
+.flex-description{
+    display: flex;
+    justify-content: center;
 }
