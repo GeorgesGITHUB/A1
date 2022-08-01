@@ -16,7 +16,10 @@ function validEventData(){
     if ( document.getElementById('name').value === (null || '') ) {
         alert('Please fill out the fields'); return false;}
 
-    if ( document.getElementById('datetime').value === (null || '') ) {
+    if ( document.getElementById('date').value === (null || '') ) {
+        alert('Please fill out the fields'); return false;}
+    
+    if ( document.getElementById('time').value === (null || '') ) {
         alert('Please fill out the fields'); return false;}
 
     if ( document.getElementById('location').value === (null || '') ) {
@@ -36,7 +39,8 @@ function getEventData(){
     var eventData =
     {
         name: document.getElementById('name').value,
-        datetime: document.getElementById('datetime').value,
+        date: document.getElementById('date').value,
+        time: document.getElementById('time').value,
         location: document.getElementById('location').value,
         description: document.getElementById('description').value,
         color: document.getElementById('color').value

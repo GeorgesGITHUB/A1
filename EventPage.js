@@ -1,10 +1,17 @@
+loadEvent();
+
+var eventData; //{name,datetime,location,description,color}
 function loadEvent(){
     var id = 'currentID';
-    var eventData; //{name,datetime,location,description,color}
-
+    
     if ( idExist(id) ) {
-
-        eventData = JSON.parse( localStorage.getItem(id) );
+        
+        eventData = JSON.parse(
+            //Very specific data topology trick to always track currentID 
+            localStorage.getItem(
+                localStorage.getItem(id)
+            )
+        );
 
         writeTitle();
         writeDate();
@@ -20,15 +27,17 @@ function loadEvent(){
 
 }
 
-function idExist(id){ return localStorage.getItem(id)!==null }
-
 function writeTitle(){
     document.getElementById('name').innerHTML = eventData.name;
 }
 
-function writeDate(){}
+function writeDate(){
+    document.getElementById('date').innerHTML = eventData.date;
+}
 
-function writeTime(){}
+function writeTime(){
+    document.getElementById('time').innerHTML = eventData.time;
+}
 
 function writeLocation(){
     document.getElementById('location').innerHTML = eventData.location;
@@ -38,4 +47,8 @@ function writeDescription(){
     document.getElementById('description').innerHTML = eventData.description;
 }
 
-function writeBackgroundColor(){}
+function writeBackgroundColor(){
+    document.body.style.backgroundColor = eventData.color;
+}
+
+function idExist(id){ return localStorage.getItem(id)!==null }
