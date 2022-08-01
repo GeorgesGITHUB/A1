@@ -52,3 +52,5 @@ function writeBackgroundColor(){
 }
 
 function idExist(id){ return localStorage.getItem(id)!==null }
+
+function goHome(){window.location.assign('LandingPage.html')}
